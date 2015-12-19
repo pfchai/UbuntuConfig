@@ -1,18 +1,23 @@
-sudo apt-get update
-sudo apt-get install openssh-server
+#!/bin/bash
 
-# install remote desktop
+sudo apt-get update
+
+# software
+sudo apt-get install openssh-server
+sudo apt-get install vim
+sudo apt-get install git
+sudo apt-get install python-pip
+
+## remote desktop
 sudo apt-get install xrdp
 sudo apt-get install vnc4server
 sudo apt-get install xubuntu-desktop
 echo "xfce4-session" >~/.xsession
 sudo service xrdp restart
 
-sudo apt-get install vim
-sudo apt-get install git
-sudo apt-get install python-pip
 
-# k-vim
+# config
+## k-vim
 sudo apt-get install ctags
 sudo apt-get install build-essential cmake python-dev  #编译YCM自动补全插件依赖
 sudo apt-get install silversearcher-ag
